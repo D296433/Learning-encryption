@@ -1,5 +1,10 @@
-import encryption.A1Z26 as A1Z26
-import encryption.Caesar_cipher as Caesar
+import encryption.Caesar_cipher as caesar
+import encryption.Atbash_cipher as atbash
+import tools.order as order
 
-a = Caesar.encrypt("This is fun!", 5)
-print(Caesar.bruteforce(a))
+output = caesar.encrypt("ynnuf", 1)
+output = caesar.decrypt(output, 1)
+output = order.reverse(output)
+print(output)
+
+print(atbash.encrypt("pvvk gsrh hvxivg"))

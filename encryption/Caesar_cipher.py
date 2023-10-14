@@ -77,5 +77,5 @@ def bruteforce(text, alphabet = defaultAlphabet):
                     break
             if not found:
                 decryptedText += letter
-        outputList.append(f"{shift}. {decryptedText}")
+        outputList.append(decryptedText)
     return outputList
